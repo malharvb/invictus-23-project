@@ -1,0 +1,37 @@
+<%- include("../includes/head.ejs") %>
+
+<link rel="stylesheet" href="/stylesheets/main.css">
+<link rel="stylesheet" href="/stylesheets/newslist.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script src="/scripts/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<%- include("../includes/nav.ejs") %>
+
+<div id="homeImgBlock">
+    <div id="headLine">Climate is Changing, Why aren't We ?</div>
+    <img src="/images/homeCIimateImgTrial.jpg" alt="climate change image" id="homeClimateImg1">
+</div>
+
+<div>
+    
+</div>
+
+<div class="homeSection2">
+<div class="visHolder">
+    <canvas id="myChart" class="visBox" name=<%= region %>></canvas>
+    <div id="warningText">The Rising Change in Temperature is Burning us!</div>
+</div>
+</div>
+
+<!-- <div class="homeSection2">
+    <div class="visHolder">
+        <canvas id="myChart" class="visBox"></canvas>
+    </div>
+    </div> -->
+
+
+<%- include("../includes/newslist.ejs", {newsList: newsList}) %>
+
+<%- include("../includes/end.ejs") %>

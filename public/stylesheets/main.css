@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "poppins", serif;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(2, 136, 73);
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    border-bottom: 1px solid aqua;
+}
+
+.navItems{
+    text-decoration: none;
+    color: white;
+    margin: 0.3rem;
+    transition: color 0.3s;
+}
+
+.navItems:hover{
+    color: rgb(4, 194, 219);
+}
+
+#loginButton{
+    background-color: orangered;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+#loginButton:hover{
+    color: white;
+}
+
+.visBox{
+    border: 7px solid rgb(2, 136, 73);
+    height: 20rem;
+    width: 56rem;
+}
+
+#homeImgBlock{
+    display: flex;
+}
+
+#homeClimateImg1, #homeClimateImg2, #homeClimateImg3{
+    height: 28rem;
+    width: 100%;
+    border: 1px solid white;
+}
+
+#headLine{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 10;
+    font-weight: bolder;
+    color: white;
+    font-size: 3rem;
+    background-color: rgba(128, 128, 128, 0.35);
+}
+
+.visHolder{
+    display: flex;
+    justify-content: space-around;
+    height:25rem;
+    width: 100%;
+}
+
+.homeSection2{
+    background-color: rgba(128, 128, 128, 0.192);
+    margin: 1rem;
+}
+
+canvas{
+    width: 45rem;
+    height: 18rem;
+}
+
+#warningText{
+    font-weight: bolder;
+    font-size: 3.5rem;
+    margin: 2rem;
+}

@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+      *{
+          margin: 0;
+          padding:0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        padding: 40px 0;
+      }
+      form input {
+      padding: 5px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap:10px
+      }
+    
+</style>
+
+<link rel="stylesheet" href="/stylesheets/main.css">
+<%- include("../includes/nav.ejs") %>
+    <div class="form-container">
+      <form action="/login" method="post">
+        <h2>Log In</h2>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Log In">
+
+      </form>
+    </div>
+  </body>
+</html>

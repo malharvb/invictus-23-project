@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carbon Emission Calculator</title>
+    
+        <link rel="stylesheet" href="/stylesheets/calc.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+
+        <script src="/scripts/calc.js" defer></script>
+
+        <%- include("../includes/nav.ejs") %>
+
+        <form>
+            <h1>Carbon Emmision Calculator</h1>
+
+            <div class="form-group">
+                <h3>What is your car's volume of fuel consumption</h3>
+                <input id='mpg' type='number' placeholder='Insert volume' required/>
+                <h3>What is the unit of volume</h3>
+                <select id='unit'>
+                    <option value ="l">Litre</option>
+                    <option value = "gallon_us">Gallons</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>What is your electricity consumption</h3>
+                <input id='elec' type='number' placeholder='Insert consumption in KwH' required/>
+            </div>
+
+            <input type="submit" id="sub-btn"/>
+
+            <div id="op-calc"></div>
+        </form>    
+        
+    </body>
+</html>

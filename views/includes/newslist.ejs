@@ -1,0 +1,10 @@
+<div class="newslist-container">
+    News:
+    <% newsList.forEach ((el) => {%>
+        <a class="news-headline-container" href=<%= el.url %>>
+            <div class="news-headline"><%= el.title %></div>
+            <div class="read-more">Read More</div>
+            <div class="headline-date"><%= el.date.split("T")[0] %></div>
+        </a>
+    <% });%>
+</div>
